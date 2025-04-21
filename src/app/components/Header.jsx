@@ -1,7 +1,7 @@
 export default function Header() {
   return (
-    <header className="bg-white shadow">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-4">
+    <header className="bg-white border-b-2 border-gray-200 px-6 ">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
