@@ -8,25 +8,21 @@ export default function CategoryList() {
             <h2 className="text-gray-600 font-open-sans text-lg mb-4">
                 دسته بندی ها
             </h2>
-            <div className="space-y-2">
+            <div className="flex flex-wrap justify-start md:flex  lg:flex-col items-start gap-4">
                 {categories.map((category) => (
                     <Link
-                        key={category.name}
-                        href="#"
-                        className="flex items-center p-2 hover:bg-gray-100 rounded-md transition duration-200 ease-in-out"
+                        key={category.id}
+                        href={`/categories/${category.name}`}
+                        className="flex p-1.5 lg:w-full w-40 bg-gray-200 items-center rounded-lg transition-all hover:bg-gray-100 duration-200 hover:transform hover:-translate-y-1 hover:shadow-md cursor-pointer"
                     >
-                        {category.icon && category.icon.startsWith("http") ? (
-                            <Image
-                                src={category.icon}
-                                alt={category.name}
-                                width={24}
-                                height={24}
-                                className="ml-2"
-                            />
-                        ) : (
-                            <span className="ml-2">{category.icon}</span>
-                        )}
-                        <span className="text-gray-600 font-open-sans ">
+                        <Image
+                            src={category.image_url}
+                            alt={category.name}
+                            width={48}
+                            height={48}
+                            className="mb-2"
+                        />
+                        <span className="text-sm font-medium text-gray-700 text-center">
                             {category.name}
                         </span>
                     </Link>
