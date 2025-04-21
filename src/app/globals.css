@@ -6,11 +6,6 @@
   direction: rtl;
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #ef4056;
-  --primary-hover: #d6364c;
-  --secondary: #f5f5f5;
-  --border: #e5e5e5;
-  --text-secondary: #666666;
 }
 
 @theme inline {
@@ -24,9 +19,6 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --secondary: #1a1a1a;
-    --border: #333333;
-    --text-secondary: #999999;
   }
 }
 
