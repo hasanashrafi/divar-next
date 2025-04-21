@@ -4,9 +4,9 @@ import CitiesList from './components/CitiesList';
 
 export default function Home() {
   return (
-    <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="  mx-auto  ">
       <Header />
-      <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12">
+      <div className="max-w-7xl mx-auto mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12">
         {/* Sidebar */}
         <div className="lg:col-span-3">
           <CategoryList />
