@@ -13,7 +13,7 @@ export default function CategoryList() {
                     <Link
                         key={category.id}
                         href={`/categories/${category.name}`}
-                        className="flex p-1.5 lg:w-full w-40 bg-gray-200 items-center rounded-lg transition-all hover:bg-gray-100 duration-200 hover:transform hover:-translate-y-1 hover:shadow-md cursor-pointer"
+                        className="flex p-1.5 lg:w-full w-40 items-center gap-x-1  rounded-lg transition-all hover:bg-gray-100 duration-200 hover:transform hover:-translate-y-1 hover:shadow-md cursor-pointer"
                     >
                         <Image
                             src={category.image_url}
