@@ -1,6 +1,6 @@
-import Header from './components/Header';
-import CategoryList from './components/CategoryList';
-import CitiesList from './components/CitiesList';
+import Header from '../components/Header';
+import CategoryList from '../components/CategoryList';
+import CitiesList from '../components/CitiesList';
 
 export default function Home() {
   return (
